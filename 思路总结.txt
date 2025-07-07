@@ -5,8 +5,62 @@
 rpx: 所有设备宽度统一为750rpx
 策略：父容器高度宽度分别用vh、rpx，子项用%
 
+【指定位置】
+说明：
+  right:是指“右”边界向组件内部方向移动，即向左移动
+第一：绝对定位（基于整个屏幕）
+理解：不好用，不符合层级递进的思想
+.share-button {
+  position: absolute;
+  left: 300rpx;
+  top: 50%; /* 垂直居中 */
+  transform: translate(-50%, -50%); /* 精确中心点定位 */
+}
+说明：
+  transform: translate(-50%, -50%) 将按钮自身向左和向上移动50%尺寸，实现中心点定位
+  
+
+第二：相对定位：
+.share-button {
+  position: relative;
+  left: 300rpx; /* 从原始位置向右偏移 */
+  transform: translateX(-50%); /* 中心点修正 */
+  top: 30rpx; /* 垂直位置 */
+}
+说明：
+  left：基准点：元素的左边界
+  transform: translateX(-50%)：向左移动宽度的一半
+
+
 【字体】
 cursive：文雅优雅风
+
+【计算式取值】
+.share-button {
+  --btn-width: 200rpx;
+  width: var(--btn-width);
+  font-size: calc(var(--btn-width) * 0.6);
+}
+写法说明：
+  --btn-width：用--前缀声明自定义属性（生效范围：选择器内）
+  var(--btn-width)：变量引用函数，获取变量值
+如何跨选择器：
+  第一，全局变量
+    :root, page {
+      --btn-width: 200rpx; /* 全局作用域 */
+    }
+  第二，继承父容器：直接写，不用写其他的
+
+【宽度可变的按钮】
+  width: 200rpx !important;
+  加上后面的"!important"即可
+  原因：
+    第一，button有微信内置的默认样式
+      button {
+        ...
+      }
+    第二，优先级规则：内联样式 > !important > ID选择器 > 类选择器 > 元素选择器
+      微信默认样式当然属于元素选择器
 
 【分享按钮】
 <button open-type="share">分享</button>

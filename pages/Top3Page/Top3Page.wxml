@@ -4,7 +4,7 @@
   </view>
   <view class="bottom-bar">
     <button class="share-button" type="primary">
-      <text class="share-font">发给好友</text>
+      <text class="share-font">分享</text>
     </button>
   </view>
 </view>
