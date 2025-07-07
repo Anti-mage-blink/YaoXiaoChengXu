@@ -1,0 +1,8 @@
+<scroll-view scroll-y style="height: 100vh;"
+  lower-threshold="100rpx" bindscrolltolower="onReachBottom" 
+  refresher-enabled="true" bindrefresherrefresh="onRefresh" refresher-triggered="{{refreshing}}">
+  <block wx:for="{{videoUrlList}}" wx:key="index">
+    <video style="width: 100%; height: 400rpx" src="{{item}}"/>
+    <button open-type="share">分享</button>
+  </block>
+</scroll-view>

@@ -1,0 +1,4 @@
+<view class="user-info" style="display: flex; ">
+  <image class="avatar" src="{{avatarUrl}}" mode="aspectFit"/>
+  <text class="nickname">{{nickName}}</text>
+</view>
