@@ -1,0 +1,15 @@
+【长度单位】
+10%: 相对于父容器的对应尺寸 = 10% * 父容器的该长度
+10vh: vh = view height, 视口单位，屏幕可见区域长度的10%
+  （相对于屏幕，与父容器无关）
+rpx: 所有设备宽度统一为750rpx
+策略：父容器高度宽度分别用vh、rpx，子项用%
+
+【字体】
+cursive：文雅优雅风
+
+【分享按钮】
+<button open-type="share">分享</button>
+  onShareAppMessage() {
+    
+  }

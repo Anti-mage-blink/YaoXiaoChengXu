@@ -3,7 +3,9 @@
     <video class="video" src="{{videoUrl}}" controls/>
   </view>
   <view class="bottom-bar">
-    <button class="share-button" type="primary">分享</button>
+    <button class="share-button" type="primary">
+      <text class="share-font">发给好友</text>
+    </button>
   </view>
 </view>
 
