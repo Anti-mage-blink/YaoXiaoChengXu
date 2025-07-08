@@ -29,12 +29,12 @@
 }
 
 .share-button {
+  position: relative;
+  left: 200rpx;
+
   height: 70%;
   width: 200rpx !important;
   border-radius: 50rpx;
-
-  position: relative;
-  left: 200rpx;
 
   display: flex;
   flex-direction: row;
@@ -55,5 +55,5 @@
 
   font-size: 40rpx;
   font-family: sans-serif;
-  
+
 }

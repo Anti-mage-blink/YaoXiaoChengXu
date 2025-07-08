@@ -22,34 +22,40 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
 
   padding-left: 0rpx;
   padding-right: 0rpx;
 }
 
+.video {
+  height: 100%;
+  width: 100%;
+}
+
 .avatar {
   margin-left: 20rpx;
 
-  height: 50rpx;
-  width: 50rpx;
+  height: 70rpx;
+  width: 70rpx;
   border-radius: 50%;
   border: 2rpx solid #fff;
 }
 
 .nickname {
-  margin-left: 5rpx;
+  position: relative;
+  left: 15rpx;
 
   font-family: sans-serif;
 }
 
 .share-button {
-  margin-left: 0rpx;
+  position: relative;
+  left: 130rpx;
 
-  height: 60%;
+  height: 70%;
   width: 200rpx !important;
-  border-radius: 20rpx;
+  border-radius: 50rpx;
 
   display: flex;
   flex-direction: row;
@@ -61,14 +67,16 @@
 }
 
 .weixin-icon {
-  margin-left: 30rpx;
+  position: relative;
+  left: 30rpx;
 
   width: 50rpx;
 
 }
 
 .share-font {
-  margin-left: 10rpx;
+  position: relative;
+  left: 40rpx;
 
   font-family: sans-serif;
 }

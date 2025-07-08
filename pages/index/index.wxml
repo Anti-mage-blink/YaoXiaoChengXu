@@ -5,7 +5,7 @@
     <view class="item-container">
 
       <view class="video-container">
-        <video class="video" src="{{item}}"/>
+        <video class="video" src="{{item}}" controls/>
       </view>
       
       <view class="bottom-bar">
