@@ -5,6 +5,10 @@
 rpx: 所有设备宽度统一为750rpx
 策略：父容器高度宽度分别用vh、rpx，子项用%
 
+【布局】
+justify-content ~ 主轴
+align-items ~ 交叉轴
+
 【指定位置】
 说明：
   right:是指“右”边界向组件内部方向移动，即向左移动
@@ -19,7 +23,6 @@ rpx: 所有设备宽度统一为750rpx
 说明：
   transform: translate(-50%, -50%) 将按钮自身向左和向上移动50%尺寸，实现中心点定位
   
-
 第二：相对定位：
 .share-button {
   position: relative;
@@ -31,9 +34,15 @@ rpx: 所有设备宽度统一为750rpx
   left：基准点：元素的左边界
   transform: translateX(-50%)：向左移动宽度的一半
 
+【margin和padding】
+从外到内：margin-border-padding
+理解：假如border是容器的边界，padding是容器边界距离里面内容的距离，margin是（容器内部的）组件距离所在容器边界的距离
+注意：一般容器有默认的padding-left/right，严格指定内部组件位置大小时，需要显式设为0
+基本上，容器的padding-left+内部组件的margin-left=组件到容器边界的距离
 
 【字体】
 cursive：文雅优雅风
+sans-serif 或者 "Gill Sans", sans-serif：
 
 【计算式取值】
 .share-button {

@@ -4,6 +4,7 @@
   </view>
   <view class="bottom-bar">
     <button class="share-button" type="primary">
+      <image class="weixin-icon" src="/images/微信图标-分享按钮用.png" mode="aspectFit"/>
       <text class="share-font">分享</text>
     </button>
   </view>
