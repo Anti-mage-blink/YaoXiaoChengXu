@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/messagePage/messagePage",
+    "pages/mainPage/mainPage",
     "pages/Top1Page/Top1Page",
     "pages/Top2Page/Top2Page",
     "pages/Top3Page/Top3Page",
     "pages/followPage/followPage",
-    "pages/videoPage/videoPage",
-    "pages/messagePage/messagePage",
+    "pages/uploadPage/uploadPage",
     "pages/myPage/myPage"
   ],
   "window": {
@@ -19,7 +19,7 @@
     "backgroundColor": "#FFFFFF",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/mainPage/mainPage",
         "text": "首页",
         "iconPath": "images/首页图标-默认.png",
         "selectedIconPath": "images/首页图标-选中.png"
@@ -31,7 +31,7 @@
         "selectedIconPath": "images/关注图标-选中.png"
       },
       {
-        "pagePath": "pages/videoPage/videoPage",
+        "pagePath": "pages/uploadPage/uploadPage",
         "text": "发视频",
         "iconPath": "images/视频图标-默认.png",
         "selectedIconPath": "images/视频图标-选中.png"

@@ -1,2 +1,30 @@
-<!--pages/messagePage/messagePage.wxml-->
-<text>pages/messagePage/messagePage.wxml</text>
+<view class="page-container">
+  <view class="top-container">
+    <view class="social-container">
+      <image class="social-icon" src="/images/粉丝图标-消息页面.png" mode="aspectFit"/>
+      <text class="social-text">粉丝</text>
+    </view>
+
+    <view class="social-container">
+      <image class="social-icon" src="/images/评论图标-消息页面.png" mode="aspectFit"/>
+      <text class="social-text">评论</text>
+    </view>
+
+    <view class="social-container">
+      <image class="social-icon" src="/images/点赞图标-消息页面.png" mode="aspectFit"/>
+      <text class="social-text">赞</text>
+    </view>
+
+    <view class="social-container">
+      <image class="social-icon" src="/images/系统消息图标-消息页面.png" mode="aspectFit"/>
+      <text class="social-text">系统消息</text>
+    </view>
+  </view>
+
+  <view class="bottom-container">
+    <swiper>
+      
+    </swiper>
+  </view>
+
+</view>

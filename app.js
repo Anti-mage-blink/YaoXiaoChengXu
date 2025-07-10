@@ -37,8 +37,24 @@ App({
         success: (res) => {
           console.log("[app.js]res.data.results: " + res.data.results);
           resolve(res.data.results);
-        }
+        },
       })
     })
   },
+
+  getImageUrl(image_name) {
+    return new Promise( (resolve) => {
+      wx.request({
+        url: this.globalData.baseUrl + "/api/images/url/",
+        method: "GET",
+        data: { image_name: image_name },
+        success: (res) => {
+          console.log("[app:getImageUrl]res:")
+          console.log(res);
+          console.log(res.data.image_url);
+          resolve(res.data.image_url);
+        }
+      })
+    })
+  }
 })

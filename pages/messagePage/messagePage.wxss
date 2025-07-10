@@ -1,1 +1,41 @@
-/* pages/messagePage/messagePage.wxss */
+.page-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.top-container {
+  height: 30%;
+  width: 100%;
+
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-container {
+  padding: 10rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 100rpx;
+  width: 100rpx;
+
+  padding: 10rpx;
+}
+
+.social-text {
+  font-family: serif;
+
+  text-align: center;
+}
+
+.bottom-container {
+  
+}

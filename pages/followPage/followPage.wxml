@@ -1,2 +1,23 @@
-<!--pages/followPage/followPage.wxml-->
-<text>pages/followPage/followPage.wxml</text>
+<scroll-view class="scroll-view" scroll-y style="height: 100vh;"
+  lower-threshold="100rpx" bindscrolltolower="onReachBottom" 
+  refresher-enabled="true" bindrefresherrefresh="onRefresh" refresher-triggered="{{refreshing}}">
+  <block wx:for="{{userList}}" wx:key="index">
+    <view class="item-container">
+
+      <view class="top-container">
+        <image src="{{item.avatarUrl}}" mode=""/>
+        <text>{{item.nickname}}</text>
+        <button type="primary">
+          <text>关注</text>
+        </button>
+      </view>
+      
+      <view class="bottom-container">
+        <video src="{{item}}"/>
+        <video src="{{item}}"/>
+        <video src="{{item}}"/>
+      </view>
+
+    </view>
+  </block>
+</scroll-view>

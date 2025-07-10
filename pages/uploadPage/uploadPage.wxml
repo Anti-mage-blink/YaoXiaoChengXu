@@ -1,0 +1,25 @@
+<view class="page-container">
+  <view class="top-container">
+    <swiper class="swiper" indicator-dots indicator-active-color="#FFFFFF" circular>
+      <swiper-item class="swiper-item">
+        <image class="swiper-image" src="{{swiper1ImageUrl}}" mode="scaleToFill"/>
+      </swiper-item>
+      <swiper-item class="swiper-item">
+        <image class="swiper-image" src="{{swiper2ImageUrl}}" mode="scaleToFill"/>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class = "mid-container">
+    <image class="left-image" src="{{leftImageUrl}}" mode="scaleToFill" bind:tap="handleTapLeft"/>
+    <image class="right-image" src="{{rightImageUrl}}" mode="scaleToFill" bind:tap="handleTapRight"/>
+  </view>
+
+  <view class="bottom-container">
+    <button class="record-button" bind:tap="handleTapBar">
+      <image class="record-icon" src="" mode=""/>
+      <text class="record-text">录制上传</text>
+    </button>
+  </view>
+
+</view>

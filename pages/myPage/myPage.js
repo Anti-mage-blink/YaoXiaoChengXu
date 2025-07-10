@@ -2,13 +2,28 @@ const app = getApp()
 
 Page({
   data: {
-    avatarFilePath: "/images/头像.png",
-    nickname: "酸汤水饺",
+    openid: "myPage",
+    userInfo: {
+      openid: null,
+      nickname: null,
+      avatarUrl: null,
+    },
 
+    fansCount: null,
+    followCount: null,
   },
 
-  onLoad() {
-    this.login();
+  async onLoad() {
+    console.log("[myPage]页面加载");
+    const res = await app.getUserInfo(this.data.openid);
+    // this.login();
+    this.setData({
+      userInfo: {
+        openid: res.openid,
+        nickname: res.nickname,
+        avatarUrl: res.avatar_url,
+      },
+    });
   },
 
   uploadUserInfo() {
