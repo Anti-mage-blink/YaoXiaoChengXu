@@ -11,15 +11,21 @@
   </view>
 
   <view class = "mid-container">
-    <image class="left-image" src="{{leftImageUrl}}" mode="scaleToFill" bind:tap="handleTapLeft"/>
-    <image class="right-image" src="{{rightImageUrl}}" mode="scaleToFill" bind:tap="handleTapRight"/>
-  </view>
+    <button class="upload-button">
+      <image class="upload-image" src="{{leftImageUrl}}" mode="scaleToFill" bindtap="handleTapLeft"/> 
+      <text class="upload-text">上传高清视频</text>
+    </button>
 
-  <view class="bottom-container">
-    <button class="record-button" bind:tap="handleTapBar">
-      <image class="record-icon" src="" mode=""/>
-      <text class="record-text">录制上传</text>
+    <button class="upload-button">
+      <image class="upload-image" src="{{rightImageUrl}}" mode="scaleToFill" bindtap="handleTapRight"/>
+      <text class="upload-text">上传短视频</text>
     </button>
   </view>
 
+  <view class="bottom-container">
+    <button class="record-button" bind:tap="handleTapBottom">
+      <image class="record-image" src="{{recordImageUrl}}" mode="scaleToFill"/>
+      <text class="record-text">录制上传</text>
+    </button>
+  </view>
 </view>

@@ -1,23 +1,21 @@
-<scroll-view class="scroll-view" scroll-y style="height: 100vh;"
-  lower-threshold="100rpx" bindscrolltolower="onReachBottom" 
-  refresher-enabled="true" bindrefresherrefresh="onRefresh" refresher-triggered="{{refreshing}}">
-  <block wx:for="{{userList}}" wx:key="index">
+<scroll-view class="scroll-view" scroll-y style="height: 100vh;">
+  <block wx:for="{{userList}}" wx:key="item.openid">
     <view class="item-container">
 
       <view class="top-container">
-        <image src="{{item.avatarUrl}}" mode=""/>
-        <text>{{item.nickname}}</text>
+        <image src="{{item.userInfo.avatarUrl}}" mode="aspectFill"/>
+        <text>{{item.userInfo.nickname}}</text>
         <button type="primary">
           <text>关注</text>
         </button>
       </view>
       
       <view class="bottom-container">
-        <video src="{{item}}"/>
-        <video src="{{item}}"/>
-        <video src="{{item}}"/>
+        <block wx:for="{{item.videoUrlList}}" wx:for-item="videoUrl" wx:key="index">
+          <video class="video_item" src="{{videoUrl}}"/>
+        </block>
       </view>
-
+      
     </view>
   </block>
 </scroll-view>

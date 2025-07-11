@@ -1,3 +1,4 @@
+// 版权所有©[2025][安贞桦]。保留所有权利。
 const app = getApp()
 Page({
   data: {

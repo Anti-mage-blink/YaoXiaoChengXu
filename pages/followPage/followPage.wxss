@@ -1,1 +1,8 @@
-/* pages/followPage/followPage.wxss */
+.item-container {
+  height: 25vh;
+  width: 100%;
+}
+
+.top-container {
+
+}

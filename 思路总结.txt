@@ -9,6 +9,8 @@ rpx: 所有设备宽度统一为750rpx
 justify-content ~ 主轴
 align-items ~ 交叉轴
 
+flex布局下设定位置：不推荐用position+上下左右，而是margin+padding
+
 【指定位置】
 疑问：相对位置和margin-左/右写法的区别？冲突后的关系？
 说明：
